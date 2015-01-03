@@ -16,28 +16,41 @@
       body {
         font-size: 100%;
         text-shadow: 1px 1px #ddd;
-        background: #ffffff url("uluru.jpg") no-repeat right top;
-        background-size: cover;
+        background: #ffffff url("uluru.jpg") no-repeat left top;
       }
 
       #content-alignment-outer {
-          display: table;
-          position: absolute;
-          height: 100%;
-          width: 28%;
-          margin-left: 72%;
+        display: table;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        max-height: 720px;
+        max-width: 960px;
       }
 
       #content-alignment-middle {
-        display: table-cell;
+        display: table;
+        margin-left: 72%;
+        height: 100%;
+        width:28%;
         border-left: 1px solid #eee;
-        vertical-align: middle;
         background-color: rgba(255, 255, 255, 0.55);
+      }
+
+      #content-alignment-inner {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
       }
 
       main {
         padding: 0 0.9em;
         text-align: center;
+      }
+
+      img {
+        height: 1.75em;
+        width: 1.75em;
       }
 
       header {
